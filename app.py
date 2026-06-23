@@ -40,7 +40,7 @@ uploaded_file = st.sidebar.file_uploader(
 
 @st.cache_data
 def load_default_data():
-    return pd.read_csv("data/Mall_Customers.csv")
+    return pd.read_csv("Mall_Customers.csv")
 
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
